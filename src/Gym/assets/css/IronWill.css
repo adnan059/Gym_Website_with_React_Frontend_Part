@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Exo 2", sans-serif;
+  font-style: italic;
+  /* transition: all 0.2s linear; */
+  text-transform: uppercase;
+}
+
+:root {
+  --red: #b20000;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 5rem 3rem;
+}
+
+.heading {
+  color: #fff;
+  font-size: 4rem;
+  margin: 2rem 0;
+  font-weight: 600;
+}
+
+.btn {
+  height: 4rem;
+  width: 14rem;
+  background: transparent;
+  border: 0.2rem solid var(--red);
+  outline: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--red);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background-color: var(--red);
+  color: #fff;
+}
+
+/* Media Queries */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+}

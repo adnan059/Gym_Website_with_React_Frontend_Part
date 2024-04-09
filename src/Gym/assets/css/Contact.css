@@ -1,0 +1,75 @@
+.contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
+    url("../images/contact-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact .heading {
+  text-align: center;
+}
+
+.contact .contact-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: burlywood; */
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.contact .contact-container form {
+  /* background-color: pink; */
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact .contact-container .image {
+  /* background-color: green; */
+  width: 50rem;
+}
+
+.contact .contact-container .image img {
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
+.contact .contact-container form input,
+.contact .contact-container textarea {
+  width: 100%;
+  font-size: 1.7rem;
+  padding: 1rem;
+  background-color: transparent;
+  border: 3px solid var(--red);
+  color: #fff;
+}
+
+.contact .contact-container form input[type="submit"] {
+  background-color: var(--red);
+  color: #fff;
+  width: max-content;
+  margin: 0 auto;
+  padding: 1rem 4rem;
+  display: block;
+  cursor: pointer;
+}
+
+.contact .contact-container textarea {
+  resize: none;
+  height: 25rem;
+}
+
+.contact .contact-container form input::placeholder,
+.contact .contact-container textarea::placeholder {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .contact .contact-container form {
+    width: 100%;
+  }
+}

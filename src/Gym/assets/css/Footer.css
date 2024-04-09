@@ -1,0 +1,95 @@
+.footer {
+  background-color: rgb(13, 15, 14);
+}
+
+.footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.footer .footer-container .box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.footer .footer-container .box-1 h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer .footer-container .box-1 h1 span {
+  color: var(--red);
+}
+
+.footer .footer-container .box-1 .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.footer .footer-container .box-1 .icons > * {
+  color: var(--red);
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+.footer .footer-container .box-2 .cw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+
+.footer .footer-container .box-2 .cw .cwicon {
+  color: #fff;
+  background-color: var(--red);
+  width: 30px;
+  height: 30px;
+  padding: 0.6rem;
+  border-radius: 50%;
+}
+
+.footer .footer-container .box-3 h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer .footer-container .box-3 p {
+  color: #fff;
+}
+
+.footer .footer-container .box-3 input {
+  padding: 1rem;
+  width: 100%;
+  display: block;
+}
+
+.footer .footer-container .box-3 .btn {
+  background-color: var(--red);
+  color: #fff;
+}
+
+.footer .credit {
+  text-align: center;
+  margin-top: 10rem;
+  font-weight: 600;
+  color: var(--red);
+}
+.footer .credit span {
+  color: #fff;
+}
+
+@media (max-width: 610px) {
+  .footer .footer-container .box-3 input {
+    width: 80%;
+  }
+}

@@ -1,0 +1,46 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+.about .heading {
+  color: var(--red);
+}
+
+.about .aboutImage {
+  flex: 1;
+}
+
+.about .aboutImage img {
+  width: 100%;
+}
+
+.about .aboutContent {
+  flex: 2;
+}
+
+.about .aboutContent .buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.about .aboutContent p {
+  font-size: 1.6rem;
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
+  .about .aboutContent {
+    max-width: 100%;
+  }
+
+  .about .aboutImage {
+    max-width: 40rem;
+  }
+}

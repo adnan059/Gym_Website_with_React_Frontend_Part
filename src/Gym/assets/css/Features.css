@@ -1,0 +1,49 @@
+.features {
+  height: auto;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: var(--red);
+}
+
+.features .card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  gap: 3rem;
+}
+
+.features .card-container .card {
+  background: #fff;
+  max-width: 50rem;
+}
+
+.features .card-container .card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.features .card-container .card .content {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.features .card-container .card .content h1 {
+  color: var(--red);
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.features .card-container .card .content p {
+  padding: 0.5rem;
+}
+
+.features .card-container .card .content button {
+  margin-top: 0.5rem;
+}
+
+.features .card-container .card:hover {
+  transform: translateY(-1.5rem);
+  box-shadow: 0 0 1rem #333;
+}

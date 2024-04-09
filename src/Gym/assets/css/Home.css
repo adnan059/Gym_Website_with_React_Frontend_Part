@@ -1,0 +1,80 @@
+.home {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/hero.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 5rem;
+  position: relative;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 9rem;
+  margin: 0 0.5rem;
+  color: #fff;
+}
+
+.home h3 {
+  font-size: 7rem;
+  color: var(--red);
+  margin: 1rem 0;
+}
+
+.home button {
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+.home .icons {
+  position: absolute;
+  bottom: 3.5rem;
+  left: 5rem;
+  z-index: 1;
+}
+
+.home .icons > * {
+  text-decoration: none;
+  font-size: 3rem;
+  margin: 0 1rem;
+  color: #fff;
+  display: inline-block;
+}
+
+.home .icons > *:hover {
+  color: #333;
+}
+
+.home .shape-image {
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  width: 100%;
+}
+
+.home .shape-image img {
+  width: 100%;
+  object-fit: cover;
+  height: 30rem;
+}
+
+@media (max-width: 620px) {
+  .home h1 {
+    font-size: 6.5rem;
+  }
+
+  .home h3 {
+    font-size: 4rem;
+  }
+  .home .icons {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
